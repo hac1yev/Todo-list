@@ -1,0 +1,24 @@
+.app-header {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.app-header option {
+	background-color: var(--bg-1);
+}
+
+.sort-todo {
+	padding: 0.7rem 1rem;
+	border: none;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	overflow: hidden;
+    background-color: var(--bg-3);
+    color: var(--black-2);
+}

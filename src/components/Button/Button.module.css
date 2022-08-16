@@ -1,0 +1,33 @@
+.primary-button {
+	padding: 0.7rem 1.5rem;
+	border: none;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--primaryPurple);
+    color: var(--bg-1);
+}
+
+.primary-button:hover {
+	opacity: 0.85;
+}
+
+.secondary-button {
+	padding: 0.7rem 1.5rem;
+	border: none;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--bg-3);
+    color: var(--black-2);
+}
+
+.secondary-button:hover {
+	opacity: 0.8;
+}

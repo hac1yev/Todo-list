@@ -1,0 +1,19 @@
+.deleted-button {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    border: none;
+    padding: 12px 24px;
+    color: #fff;
+    font: 16px sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.deleted-button:hover {
+    background-color: #ddd;
+    color: #000;
+    transition: all 0.2s ease;
+}

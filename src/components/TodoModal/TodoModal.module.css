@@ -1,0 +1,102 @@
+.todo-modal {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.todo-container {
+    background-color: var(--bg-2);
+	max-width: 500px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 8px;
+	position: relative;
+	animation: todoModal 0.4s ease;
+}
+
+@keyframes todoModal {
+	from{
+		top: -50px;
+		opacity: 0;
+	}to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+.close-todo-form {
+    position: absolute;
+	top: -6px;
+	right: 0;
+	transform: translateY(-100%);
+	font-size: 1.1rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	background-color: var(--gray-1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	z-index: -1;
+    color: var(--black-2);
+}
+
+.close-todo-form:hover {
+    background-color: #e32525;
+	color: white;
+}
+
+.form-title {
+    color: var(--black-1);
+	font-weight: 600;
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+}
+
+.todo-form {
+    width: 100%;
+}
+
+.todo-form label {
+    font-size: 1.2rem;
+	color: var(--black-1);
+}
+
+.todo-form input,
+.todo-form select {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+	border: 2px solid var(--white);
+    background-color: var(--white);
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.todo-form input:focus,
+.todo-form select:focus {
+    border: 2px solid var(--primaryPurple);
+    outline: none;
+} 
+
+.todo-modal-button {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}

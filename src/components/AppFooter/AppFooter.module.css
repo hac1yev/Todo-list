@@ -1,0 +1,41 @@
+.app-footer {
+    border-radius: 4px;
+    margin-top: 7px;
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-buttons button {
+    background-color: rgb(189, 55, 55);
+    color: var(--white);
+    width: 49%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.footer-buttons button:hover {
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.complete-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+
+.all-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+

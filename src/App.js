@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PageTitle from "./components/PageTitle/PageTitle";
+import './styles/GlobalStyles.css';
+import AppHeader from './components/AppHeader/AppHeader';
+import AppContent from "./components/AppContent/AppContent";
+import { Toaster } from 'react-hot-toast';
+import AppFooter from "./components/AppFooter/AppFooter";
+import DeletedTodoButton from "./components/DeletedTodoButton/DeletedTodoButton";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app">
+        <div className='todo-head'>
+          <PageTitle>TODO LIST</PageTitle>
+          <DeletedTodoButton />
+        </div>
+        <div className='add-wrapper'>
+          <AppHeader />
+          <AppContent />
+          <AppFooter />
+        </div>
+      </div>
+      <Toaster position="bottom-right" toastOptions={{
+        style: {
+          fontSize: '1.1rem',
+          padding: '1rem'
+        }
+      }}/>
+    </>
   );
-}
+};
 
 export default App;
